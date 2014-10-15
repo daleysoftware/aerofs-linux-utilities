@@ -12,3 +12,5 @@ The scripts allow you to do things like:
 And so on.
 
 Contact: Matt Pillar <mpillar@uwaterloo.ca>
+
+N.B. these scripts are not officially endorsed by AeroFS at this time.

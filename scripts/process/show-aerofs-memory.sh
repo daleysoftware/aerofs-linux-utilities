@@ -19,5 +19,5 @@ do
 
     echo "$invocation"
     echo -e "\tPID = $pid"
-    echo -e "\t$(./show-memory-for-process.sh $pid)"
+    echo -e "\t$(../system/show-memory-for-process.sh $pid)"
 done
