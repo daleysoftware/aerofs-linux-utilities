@@ -1,4 +1,4 @@
-Aerofs Linux Utilities
+AeroFS Linux Utilities
 ===
 
 This repository contains a number of scripts that might be useful to AeroFS
