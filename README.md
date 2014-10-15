@@ -9,6 +9,6 @@ The scripts allow you to do things like:
 - Launch the AeroFS daemon directly, without the AeroFS CLI.
 - Launch AeroFS in a docker container.
 
-Etc.
+And so on.
 
 Contact: Matt Pillar <mpillar@uwaterloo.ca>
