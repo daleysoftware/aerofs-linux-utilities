@@ -18,18 +18,18 @@ qcow=$(echo $qcow_gz | awk -F '.gz' '{print $1}')
 
 echo ">> Decompressing image..."
 zcat $qcow_gz > $qcow
-echo ">> Converting to VHD format..."
-qemu-img convert -O vpc $qcow aerofs-appliance.vhd
+echo ">> Converting to RAW format..."
+qemu-img convert -O raw $qcow aerofs-appliance.raw
 
 echo ">> Importing instance..."
 ec2-import-instance \
     -t m3.xlarge \
-    -f VHD \
+    -f RAW \
     -a x86_64 \
     -p Linux \
     -o $AWS_ACCESS_KEY -w $AWS_SECRET_KEY \
     -g $security_group \
-    -b $s3_bucket aerofs-appliance.vhd
+    -b $s3_bucket aerofs-appliance.raw
 
 echo ">> Instance will be available after conversion:"
 ec2-describe-conversion-tasks
