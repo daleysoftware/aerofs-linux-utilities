@@ -12,24 +12,30 @@ containers on your infrastructure, why not add AeroFS to the list?
 Usage
 ---
 
-1. Build the AeroFS docker image. The image in this repository is based on
+1. Build the AeroFS docker image. The image in this repository is based on  
    Ubuntu 14.04.
 
-    ./build-aerofs-image.sh
+```
+./build-aerofs-image.sh
+```
 
 2. Run/launch the docker container.
 
-    ./run-aerofs-container.sh
+```
+./run-aerofs-container.sh
+```
 
-3. Configure the container. Here you provide the container with your AeroFS
-   credentials and specify whether you would like to run the normal AeroFS
-   client software or the AeroFS team server. Configuration is made easy using
-   some python scripts that are part another one of my projects,
-   [aerofs-upstart](https://github.com/mpillar/aerofs-upstart). Specifically,
-   we are making use of the "Quick Install" path for installing AeroFS with
+3. Configure the container. Here you provide the container with your AeroFS  
+   credentials and specify whether you would like to run the normal AeroFS  
+   client software or the AeroFS team server. Configuration is made easy using  
+   some python scripts that are part another one of my projects,  
+   [aerofs-upstart](https://github.com/mpillar/aerofs-upstart). Specifically,  
+   we are making use of the "Quick Install" path for installing AeroFS with  
    upstart functionality.
 
-   ./config-aerofs-container.sh <container-id>
+```
+./config-aerofs-container.sh <container-id>
+```
 
 After that, your AeroFS container will be up and running.
 
