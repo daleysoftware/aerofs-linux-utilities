@@ -8,6 +8,6 @@ fi
 
 docker exec -it $@ /bin/bash -c \
     "cd /tmp && \
-    curl -sL https://bit.ly/10dm1z5 > aerofs.sh && \
+    curl -sL https://raw.githubusercontent.com/mpillar/aerofs-upstart/master/quick-install.sh > aerofs.sh && \
     chmod +x aerofs.sh && \
     (./aerofs.sh; rm aerofs.sh)"
