@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -dt aerofs
+docker run -d --tty=false aerofs

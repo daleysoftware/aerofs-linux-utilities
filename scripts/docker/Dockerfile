@@ -14,5 +14,5 @@ ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en  
 ENV LC_ALL en_US.UTF-8  
 
-# Command -- keep it running in the background, allow us to attach.
-CMD /bin/bash
+# Command -- keep it running in the background.
+CMD /bin/sleep infinity

@@ -32,3 +32,14 @@ Notes
 ---
 
 This is the most basic installation pattern. To enhance this setup, you might want to use a [data volume](http://docs.docker.com/userguide/dockervolumes/) or some similar, more advanced configuration.
+
+Todo
+---
+
+This sub-project is a work in progress and is not fully functional yet.
+
+Still TODO/TOFIX:
+
+1. Can't install regular client on aufs; need volume for that.
+2. _All_ installs seem to be broken after adding the devnull stuff to the cli popen (works on vanilla linux).
+3. Service doesn't seem to auto-start when the docker container is launched.
