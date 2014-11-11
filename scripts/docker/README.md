@@ -5,6 +5,15 @@ The scripts and configuration files in this repository make it easy to run AeroF
 
 This is useful for a variety of reasons, but my favorite use case is running the AeroFS Team Server in a docker container to improve the availability of your AeroFS system. If you already have a number of services running in containers on your infrastructure, why not add AeroFS to the list?
 
+Prerequisites
+---
+
+- `docker.io`
+- `curl`
+- `python`
+- `python-pip`
+- The pip module `colorama`.
+
 Usage
 ---
 
