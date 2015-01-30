@@ -1,8 +1,6 @@
 AeroFS Linux Utilities
 ===
 
-*Not officially endorsed by AeroFS at this time.*
-
 This repository contains a number of scripts that might be useful to AeroFS
 users on Linux.
 
