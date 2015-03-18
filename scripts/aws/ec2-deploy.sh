@@ -4,15 +4,16 @@
 
 set -eu
 
-if [ $# -ne 3 ]
+if [ $# -ne 4 ]
 then
-    echo "Usage: $(basename $0) <security_group> <s3_bucket> <qcow_gz>"
+    echo "Usage: $(basename $0) <security_group> <subnet_id> <s3_bucket> <qcow_gz>"
     exit 0
 fi
 
 security_group=$1
-s3_bucket=$2
-qcow_gz=$3
+subnet_id=$2
+s3_bucket=$3
+qcow_gz=$4
 
 qcow=$(echo $qcow_gz | awk -F '.gz' '{print $1}')
 
@@ -29,6 +30,7 @@ ec2-import-instance \
     -p Linux \
     -o $AWS_ACCESS_KEY -w $AWS_SECRET_KEY \
     -g $security_group \
+    --subnet $subnet_id \
     -b $s3_bucket aerofs-appliance.raw
 
 echo ">> Instance will be available after conversion:"
